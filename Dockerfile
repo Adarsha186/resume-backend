@@ -1,13 +1,11 @@
 # Use the official Python base image
-FROM python:3.9-slim
+FROM python:3.12-slim
 
 # Set the working directory inside the container
 WORKDIR /app
 
 # Copy the requirements.txt file
 COPY requirements.txt .
-
-EXPOSE 8080
 
 # Install the dependencies
 RUN pip install -r requirements.txt
@@ -16,4 +14,4 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # Set the default command for the container
-CMD ["python", "app.py"]
+CMD ["python3", "app.py"]
