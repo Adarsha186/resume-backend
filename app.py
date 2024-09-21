@@ -16,7 +16,7 @@ def hello_http(request):
         @firestore.transactional
         def update_counter(transaction, doc_ref):
             snapshot = doc_ref.get(transaction=transaction)
-            new_count = snapshot.get('count') + 1
+            new_count = snapshot.get('count') + 2
             transaction.update(doc_ref, {'count': new_count})
             return new_count
 
