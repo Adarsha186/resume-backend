@@ -7,6 +7,8 @@ WORKDIR /app
 # Copy the requirements.txt file
 COPY requirements.txt .
 
+EXPOSE 8080
+
 # Install the dependencies
 RUN pip install -r requirements.txt
 
