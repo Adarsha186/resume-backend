@@ -1,5 +1,5 @@
 options:
-  logging: NONE
+  log_bucket: gs://resume-logs-bucket
 
 steps:
   - name: 'gcr.io/cloud-builders/docker'
