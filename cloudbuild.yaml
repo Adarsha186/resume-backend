@@ -11,3 +11,5 @@ steps:
       '--platform', 'managed',
       '--allow-unauthenticated'
     ]
+    options:
+      logging: NONE
