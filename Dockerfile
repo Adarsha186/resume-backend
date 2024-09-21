@@ -13,9 +13,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the rest of the application code
 COPY . .
 
-# (Optional) Create a non-root user and switch to it
-RUN useradd -m myuser
-USER myuser
-
 # Set the default command for the container
 CMD ["python3", "app.py"]
